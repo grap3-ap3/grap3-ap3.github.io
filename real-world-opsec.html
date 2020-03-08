@@ -1,73 +1,106 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="" />
 
-        <title>OpSec in the Real World</title>
-        <meta charset="utf-8" />
-        <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Chaos Monkey Full Atom Feed" />
-        <link href="/feeds/blog.atom.xml" type="application/atom+xml" rel="alternate" title="Chaos Monkey Categories Atom Feed" />
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 
-
-        <!-- Mobile viewport optimized: j.mp/bplateviewport -->
-        <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1">
-
-        <link rel="stylesheet" type="text/css" href="/theme/gumby.css" />
-        <link rel="stylesheet" type="text/css" href="/theme/style.css" />
-        <link rel="stylesheet" type="text/css" href="/theme/pygment.css" />
-
-        <script src="/theme/js/libs/modernizr-2.6.2.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/theme/stylesheet/style.min.css">
 
 
+  <link rel="stylesheet" type="text/css" href="/theme/pygments/github.min.css">
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/solid.css">
 
+
+    <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Chaos Monkey Atom">
+
+
+
+
+
+<meta name="author" content="Phil Grimes" />
+<meta name="description" content="Operations Security What is OpSec? Operations Security (OpSec) is the action of protecting information which might be used against one in a hostile encounter. OpSec forces a person, or organization, to perform threat modeling to determine potential vulnerabilities which might be exposed to adversaries and establish controls aimed at anticipating …" />
+<meta name="keywords" content="Security">
+
+
+<meta property="og:site_name" content="Chaos Monkey"/>
+<meta property="og:title" content="OpSec in the Real World"/>
+<meta property="og:description" content="Operations Security What is OpSec? Operations Security (OpSec) is the action of protecting information which might be used against one in a hostile encounter. OpSec forces a person, or organization, to perform threat modeling to determine potential vulnerabilities which might be exposed to adversaries and establish controls aimed at anticipating …"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content="/real-world-opsec.html"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2018-04-28 18:45:00-05:00"/>
+<meta property="article:modified_time" content=""/>
+<meta property="article:author" content="/author/phil-grimes.html">
+<meta property="article:section" content="Blog"/>
+<meta property="article:tag" content="Security"/>
+<meta property="og:image" content="">
+
+  <title>Chaos Monkey &ndash; OpSec in the Real World</title>
 
 </head>
+<body>
+  <aside>
+    <div>
+      <a href="">
+        <img src="/theme/img/profile.png" alt="" title="">
+      </a>
+      <h1><a href=""></a></h1>
 
-<body id="index" class="home">
+      <nav>
+        <ul class="list">
+
+            <li><a target="_blank" href="/pages/about.html#about">About Me</a></li>
+            <li><a target="_blank" href="/pages/my-talks.html#my-talks">My Talks</a></li>
+            <li><a target="_blank" href="/pages/wiki-2.html#wiki-2">Wiki</a></li>
+
+            <li><a target="_blank" href="http://getpelican.com/" >Pelican</a></li>
+            <li><a target="_blank" href="http://python.org/" >Python.org</a></li>
+            <li><a target="_blank" href="http://jinja.pocoo.org/" >Jinja2</a></li>
+            <li><a target="_blank" href="#" >You can modify those links in your config file</a></li>
+        </ul>
+      </nav>
+
+      <ul class="social">
+          <li>
+            <a  class="sc-You can add links in your config file" href="#" target="_blank">
+            <i class="fab fa-You can add links in your config file">
+            </i>
+          </a></li>
+          <li>
+            <a  class="sc-Another social link" href="#" target="_blank">
+            <i class="fab fa-Another social link">
+            </i>
+          </a></li>
+      </ul>
+    </div>
 
 
-    <div class="container">
-
-        <div class="row">
-
-          <header id="banner" class="body">
-                  <h1><a href="/">Chaos Monkey <strong></strong></a></h1>
-          </header><!-- /#banner -->
-
-            <div id="navigation" class="navbar row">
-              <a href="#" gumby-trigger="#navigation &gt; ul" class="toggle"><i class="icon-menu"></i></a>
-             
-              <ul class="columns">
-                <li><a href="/">Home</a></li>
-
-                <li><a href="/pages/about.html">About Me</a></li>
-                <li><a href="/pages/my-talks.html">My Talks</a></li>
-                <li><a href="/pages/wiki-2.html">Wiki</a></li>
-
-              </ul>
-            </div>
-
-<section id="content" class="body">
-
-   <div class="row">
-        <div class="eleven columns">
+  </aside>
+  <main>
 
 
-            <header>
-              <h2 class="entry-title">
-                <a href="/real-world-opsec.html" rel="bookmark"
-                   title="Permalink to OpSec in the Real World">OpSec in the Real World</a></h2>
-           
-            </header>
-            <footer class="post-info">
-              <abbr class="published" title="2018-04-28T18:45:00-05:00">
-                Sat 28 April 2018
-              </abbr>
-              <address class="vcard author">By 
-                <a class="url fn" href="/author/phil-grimes.html"> Phil Grimes</a>
-              </address>
-            </footer><!-- /.post-info -->
-            <div class="entry-content">
-              <h1>Operations Security</h1>
+<article class="single">
+  <header>
+      
+    <h1 id="real-world-opsec">OpSec in the Real World</h1>
+    <p>
+          Posted on Sat 28 April 2018 in <a href="/category/blog.html">Blog</a>
+
+
+    </p>
+  </header>
+
+
+  <div>
+    <h1>Operations Security</h1>
 <h2>What is OpSec?</h2>
 <p>Operations Security (OpSec) is the action of protecting information which might be used against one in a hostile encounter. OpSec forces a person, or organization, to perform threat modeling to determine potential vulnerabilities which might be exposed to adversaries and establish controls aimed at anticipating and defending possible attacks. Identifying attack surfaces and hardening them reduces risk and increases the difficulty an adversary faces in launching a successful attack.</p>
 <p><strong>“All warfare is based on deception. Hence, when able to attack, we must seem unable; when using our forces, we must seem inactive; when we are near, we must make the enemy believe we are far away; when far away, we must make him believe we are near.”  - Sun Tzu</strong> </p>
@@ -114,75 +147,39 @@
 <p>Each of these present their own unique risks to personal OpSec and should be addressed to reduce the risk of attacks.</p>
 <h2>Conclusion</h2>
 <p>OpSec is a necessity for anyone who has anything sensitive that needs to be kept confidential. Obscuring information, skewing facts, and offering misinformation can all be useful in protecting personal operations. Making sure to be consistent in these practices will eliminate the likelihood that information gets leaked to unauthorized parties, reducing the overall attack surface. Protect yourself out there- no one's going to do it for you!</p>
-            </div><!-- /.entry-content -->
-
-
-        </div><!-- /.eleven.columns -->
-
-<div class="three columns">
-
-  <h4>Pages</h4>
-
-  <ul>
-
-    <li ><a href="/pages/about.html">About Me</a></li>
-    <li ><a href="/pages/my-talks.html">My Talks</a></li>
-    <li ><a href="/pages/wiki-2.html">Wiki</a></li>
-  
-
-
-
-
-<nav class="widget">
-  <h4>Social</h4>
-  <ul class="blank">
-    <li><a href="#">You can add links in your config file</a></li>
-    <li><a href="#">Another social link</a></li>
-  </ul>
-</nav>
-
-</div> </div><!-- /.row -->
-
-
-</section>
-
-       </div><!-- /.row -->
-    </div><!-- /.container -->
-
-
-       <div class="container.nopad bg">
-
-    
-        <footer id="credits" class="row">
-          <div class="seven columns left-center">
-
-                   <address id="about" class="vcard body">
-                    Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
-                    which takes great advantage of <a href="http://python.org">Python</a>.
-                    <br />
-                    Based on the <a target="_blank" href="http://gumbyframework.com">Gumby Framework</a>
-                    </address>
-          </div>
-
-
-          <div class="seven columns">
-            <div class="row">
-              <ul class="socbtns">
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="/tag/security.html">Security</a>
+    </p>
+  </div>
 
 
 
 
 
-              </ul>
-            </div>
-          </div>
-        </footer>
+</article>
 
-    </div>
+    <footer>
+<p>&copy;  </p>
+<p>    Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+</p>    </footer>
+  </main>
 
 
-  <script src="/theme/js/libs/jquery-1.9.1.min.js"></script>
-  <script src="/theme/js/libs/gumby.min.js"></script>
-  <script src="/theme/js/plugins.js"></script>
+
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " Chaos Monkey ",
+  "url" : "",
+  "image": "",
+  "description": ""
+}
+</script>
+
+
 </body>
 </html>
