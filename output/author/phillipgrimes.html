@@ -1,95 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+        <title>Chaos Monkey - Articles by phillipGrimes</title>
         <meta charset="utf-8" />
-        <title>Chaos Monkey - phillipGrimes</title>
-        <link rel="stylesheet" href="/theme/css/main.css" />
-        <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Chaos Monkey Atom Feed" />
+        <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Chaos Monkey Full Atom Feed" />
 </head>
 
 <body id="index" class="home">
         <header id="banner" class="body">
-                <h1><a href="/">Chaos Monkey </a></h1>
-                <nav><ul>
-                    <li><a href="/pages/about.html">About Me</a></li>
-                    <li><a href="/pages/my-talks.html">My Talks</a></li>
-                    <li><a href="/pages/wiki-2.html">Wiki</a></li>
-                    <li><a href="/category/blog.html">Blog</a></li>
-                </ul></nav>
+                <h1><a href="/">Chaos Monkey <strong></strong></a></h1>
         </header><!-- /#banner -->
+        <nav id="menu"><ul>
+            <li><a href="/pages/about.html">About Me</a></li>
+            <li><a href="/pages/my-talks.html">My Talks</a></li>
+            <li><a href="/pages/wiki-2.html">Wiki</a></li>
+            <li><a href="/category/blog.html">Blog</a></li>
+        </ul></nav><!-- /#menu -->
+<section id="content">
+<h2>Articles by phillipGrimes</h2>
 
-            <aside id="featured" class="body">
-                <article>
-                    <h1 class="entry-title"><a href="/self-doxing-loose-lips-sink-ships.html">Self Doxing: Loose Lips Sink Ships</a></h1>
-<footer class="post-info">
-        <abbr class="published" title="2018-07-04T14:22:00-05:00">
-                Published: Wed 04 July 2018
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="/author/phillipgrimes.html">phillipGrimes</a>
-        </address>
-<p>In <a href="/category/blog.html">Blog</a>.</p>
-<p>tags: <a href="/tag/security.html">Security</a> </p>
-</footer><!-- /.post-info --><p>For anyone who spends any time reading my content, you may remember a recent post that outlines my thoughts on the general basics of Operational Security. A well timed <code>tweet &lt;https://twitter.com/cokebottle/status/1012345863371395072&gt;</code><strong>\ last week, sparked by this <code>article &lt;https://medium.com/@cosmin.ciobanu/my-top-5-opsec-rules-for-airport-lounges-7c0a48d4c09b&gt;</code></strong>, kicked off some interesting conversations around the topic which resulted in the series of thoughts that sparked what you're reading now. During the interactions on Twitter, one <code>tweet &lt;https://twitter.com/spyblog/status/1012442709917880320&gt;</code>__ in particular hit on several areas that I observe to be blatantly prevalent as I travel, work in the field, or observe people in general daily life.</p>
-<p>Since these were called out by others during the conversation, and I have had the (mis)fortune of running into some of them recently, I figured I'd expound on the topics. In my normal fashion, I thought some anecdotes could help drive the visibility up a bit and hopefully get some of you thinking a little differently about how you handle yourselves in public.</p>
-<h1>What is "Doxing"?</h1>
-<p>First, a little background. Somewhere along the line "doxing" became a recognized form of internet attack. Basically, this tactic requires the attacker(s) to scour internet resources to gather information on a targeted individual, and then broadcasting personal or private information about that person. While the point of this article is not to go in-depth into the world of doxing, some high profile examples are outlined on the <code>Wikipedia page &lt;https://en.wikipedia.org/wiki/Doxing&gt;</code>__ covering the topic.</p>
-<p>Typically, attackers will use the collected information to put pressure on targets, or to put them at risk in the most severe circumstances. While this most often is the result of actions taken by attackers against us, all too often people fall victim to "self-doxing". In these instances, inattention to details or surroundings falsely convince a person that they are in a safe place to divulge certain information. All of these vectors are viable and often employed 'in the wild'. As an attacker, I exercise these skills without even thinking about it. Here is my take on the subject:</p>
-<h2>Shoulder surfing</h2>
-<p>I was sitting aboard a flight recently, exit row aisle seat. I had been drawn to one particular individual who'd caught my attention through his generally boisterous nature during the boarding process. His holier-than-thou arrogance dripped off him, much like the aroma of the Tommy cologne he must've bathed in that morning. My eyes, closed as usual to appreciate the sensation of takeoff, opened when the flight attendant came over the PA with an annoyed tone. Her reminder to remain seated through the ascent was prompted by Mr. Important as he was standing in the aisle 2 rows ahead of me, digging his laptop from his belongings in the storage compartment above.</p>
-<p>When he settled back into his seat, I couldn't help myself but to get a peek at what was so pressing. In the hour that followed, I caught sight of documents his company surely wouldn't want outsiders to see. I didn't take photos for proof but I'm pretty sure capturing these documents would have been fairly easy to do. I also saw other juicy tidbits like contact information for others within Mr. Important's company. Were I a bad guy, I could have leveraged the information here in a social engineering campaign to gain access to more sensitive information, and potentially unauthorized access into the company itself.</p>
-<p>It's wise to be mindful of your surroundings, especially when traveling. You never know who's watching so exposing sensitive data should always be considered a risk in public. These things can usually wait until you're in a private place where prying eyes are not a concern. However, if you must touch sensitive data in public, use a <code>privacy filter &lt;https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Daps&amp;field-keywords=laptop+privacy+screen&gt;</code>__ to reduce exposure to onlookers.</p>
-<h2>Passive conversation listening</h2>
-<p>I ran into two separate instances on the same trip recently, where the information divulged in conversation provided me with enough information to identify the individuals, and gather significant pieces of private information about them, to make a significant impact upon their personal lives. I wanted to share these experiences here in hopes that we can reduce the number of times so much information is divulged in such a short time.</p>
-<h3>Mary Loves to Fly</h3>
-<p>I'd never met Mary before. Nothing about her caught my attention. She was already in the middle seat, one row behind me, when I settled into mine. As the plane filled, conversations rambled as they do, and when Mary's travel neighbors settled in, she  chatted up a storm with Lucy in the window seat next to her. Now I am usually a pretty passive listener, a skill honed over a lifetime which lets me parse conversations and pick up on valuable tidbits. It's quite nice for drowning out the general drivel of small talk while still letting me tune in when the conversation turns juicy.</p>
-<p>A few minutes into Mary's conversation with Lucy and I was gleaning bits and pieces of data that officially had me tuned in. Mary had given up her last name within minutes as well as her husband's name, he was sitting up in first class but she thought the upgrade was not worth the cost, and the names of their 3 kids who were waiting for them on the other side of the flight. By the time we touched down I knew cites of residence, places of employment, and names. With a little OSINT gathering, there was enough public record and social media interaction to provide me with a full profile of all 5 members of this family.</p>
-<h3>Alexis and Her Lexus</h3>
-<p>On this same business trip, I was out to dinner at a local establishment. I sat at the bar and soaked up the atmosphere of the locals. 3 middle-aged men were at one corner of the bar sharing all kinds of tall tales, and taking their opportunities to hit on the young bartender, Alexis. Through the conversations they'd strike up with her, I learned she was a very proud owner of a Lexus RC, she was somewhat of a gym rat, and she once threw a full bottle of wine at an ex-boyfriend's head in a rage after finding out he cheated on her. Oh, and her last name.</p>
-<p>I was already in the mindset of the effects of this information leakage, and so I did a little more digging and was again able to gather some pretty deep detail on this subject, just from the couple hours of conversation I listened into at the bar one evening.</p>
-<p>With cases like the murder of Kenichiro Okamoto fresh in our minds, we have to realize that oversharing can be deadly. Sure, this is an extreme case but people don't realize how much information they leak on a regular basis. Stop talking about your children in so much detail with strangers. Don't be so comfortable to divulge details of where you work with someone you've just met - let along in the open air of an airplane with countless unknown listeners.</p>
-<h2>Dumpster diving</h2>
-<p>The old adage rings true. One's trash really can be treasure to another! The information discarded into the trash can often be used to the advantage of a threat actor. Think about what you're getting rid of and how it might be used in the hands of some nefarious evil doer. As much as we'd like to think it won't happen to us, the chances are ever increasing that someone will act upon a crime of opportunity and make use of data if it's easily accessible.</p>
-<h2>Public computers</h2>
-<p>I'm always surprised by the number of people I see who are still using shared computers. At the library, in the airport, and most often at hotels, people log into these shared machines for many reasons. I don't have much to offer here because I strongly recommend bringing your own device to access data when on the road. But if you must use a shared machine:</p>
-<ul>
-<li>Learn to delete cookie from the web browser</li>
-<li>Delete any files downloaded to the machine</li>
-<li>Log out of EVERYTHING</li>
-</ul>
-<h2>Unattended devices</h2>
-<p>Here is another vector that just boggles my mind. Why, in today's hostile world, do people ever find it appropriate to leave their belongings unattended? I can't comprehend this logic. Even the cheapest MP3 player can be left alone and someone will take it simply because they can! People aren't nice. If you have something of any value, they're likely to want it for their own.</p>
-<p>Picture you're in a parking lot, standing between 2 cars among a sea of others. 1/2 mile from anyone else with no surveillance. One car is locked and has a $100 bill sitting on the passenger seat. The other, windows down and unlocked, with a $5 in the cup holder. The chances are great that the $5 gets stolen more often than the $100 simply because of availability and ease of access. Make yourself and easy target and you make yourself a definite target.</p>                </article>
-            </aside><!-- /#featured -->
-        <section id="extras" class="body">
-                <div class="blogroll">
-                        <h2>links</h2>
-                        <ul>
-                            <li><a href="http://getpelican.com/">Pelican</a></li>
-                            <li><a href="http://python.org/">Python.org</a></li>
-                            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
-                            <li><a href="#">You can modify those links in your config file</a></li>
-                        </ul>
-                </div><!-- /.blogroll -->
-                <div class="social">
-                        <h2>social</h2>
-                        <ul>
-                            <li><a href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
-
-                            <li><a href="#">You can add links in your config file</a></li>
-                            <li><a href="#">Another social link</a></li>
-                        </ul>
-                </div><!-- /.social -->
-        </section><!-- /#extras -->
-
+<ol id="post-list">
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="/self-doxing-loose-lips-sink-ships.html" rel="bookmark" title="Permalink to Self Doxing: Loose Lips Sink Ships">Self Doxing: Loose Lips Sink Ships</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2018-07-04T14:22:00-05:00"> Wed 04 July 2018 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="/author/phillipgrimes.html">phillipGrimes</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p>For anyone who spends any time reading my content, you may remember a recent post that outlines my thoughts on the general basics of Operational Security. A well timed <code>tweet &lt;https://twitter.com/cokebottle/status/1012345863371395072&gt;</code><strong>\ last week, sparked by this <code>article &lt;https://medium.com/@cosmin.ciobanu/my-top-5-opsec-rules-for-airport-lounges-7c0a48d4c09b&gt;</code></strong>, kicked off …</p> </div><!-- /.entry-content -->
+        </article></li>
+</ol><!-- /#posts-list -->
+</section><!-- /#content -->
         <footer id="contentinfo" class="body">
                 <address id="about" class="vcard body">
-                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
+                which takes great advantage of <a href="http://python.org">Python</a>.
                 </address><!-- /#about -->
-
-                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
         </footer><!-- /#contentinfo -->
-
 </body>
 </html>
