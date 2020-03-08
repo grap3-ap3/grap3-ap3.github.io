@@ -1,211 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+        <title>Chaos Monkey - Security tag</title>
         <meta charset="utf-8" />
-        <title>Chaos Monkey - Security</title>
-        <link rel="stylesheet" href="/theme/css/main.css" />
-        <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Chaos Monkey Atom Feed" />
+        <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Chaos Monkey Full Atom Feed" />
 </head>
 
 <body id="index" class="home">
         <header id="banner" class="body">
-                <h1><a href="/">Chaos Monkey </a></h1>
-                <nav><ul>
-                    <li><a href="/pages/about.html">About Me</a></li>
-                    <li><a href="/pages/my-talks.html">My Talks</a></li>
-                    <li><a href="/pages/wiki-2.html">Wiki</a></li>
-                    <li><a href="/category/blog.html">Blog</a></li>
-                </ul></nav>
+                <h1><a href="/">Chaos Monkey <strong></strong></a></h1>
         </header><!-- /#banner -->
+        <nav id="menu"><ul>
+            <li><a href="/pages/about.html">About Me</a></li>
+            <li><a href="/pages/my-talks.html">My Talks</a></li>
+            <li><a href="/pages/wiki-2.html">Wiki</a></li>
+            <li><a href="/category/blog.html">Blog</a></li>
+        </ul></nav><!-- /#menu -->
+<section id="content">
+<h2>Articles tagged with Security</h2>
 
-            <aside id="featured" class="body">
-                <article>
-                    <h1 class="entry-title"><a href="/installing-the-keepass-password-manager.html">Installing the KeePass Password Manager</a></h1>
-<footer class="post-info">
-        <abbr class="published" title="2018-07-23T15:02:00-05:00">
-                Published: Mon 23 July 2018
-        </abbr>
-		<br />
-        <abbr class="modified" title="2020-01-04T18:40:00-06:00">
-                Updated: Sat 04 January 2020
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="/author/phil-grimes.html">Phil Grimes</a>
-        </address>
-<p>In <a href="/category/blog.html">Blog</a>.</p>
-<p>tags: <a href="/tag/security.html">Security</a> </p>
-</footer><!-- /.post-info --><p>Today I want to walk through installing the KeePass password manager on Windows 10. This post will explore downloading, installing, and first steps to using a local password manager. The end result, for those who follow these steps, will be an encrypted password generation and storage mechanism.</p>
-<h1>Setting Up KeePass</h1>
-<h2>Download KeePass</h2>
-<p>The first step in the process is downloading the installer. From the KeePass download page <code>&lt;https://keepass.info/download.html&gt;</code>_, there are options for both the installer and the portable package. While this post will be focused around installing the software on Windows 10, the portable option provides a good solution for users who need their passwords on multiple machines.</p>
-<p><img src="../images/installing_keepass/KP1_KeePass_Download_Page.png" alt="drawing" style="width=500px; height=350px"/></p>
-<p>Choose the installer and then save the file to disk</p>
-<p><img alt="Save Installer" src="../images/installing_keepass/KP2_Save_File.png" title="Save Installer"></p>
-<p>Once downloaded, navigate in Explorer to wherever the file was saved. Usually, this is in C:\Users\$USER\Downloads. Double clicking the installer will launch the process. After Windows User Access Control confirms permission to proceed, the KeePass installer will launch. The following series of images illustrates the install process.</p>
-<h2>Installing KeePass</h2>
-<p>First, select the install language.</p>
-<p><img alt="Select Language" src="../images/installing_keepass/KP3_Choose_Language.png" title="Select Language"></p>
-<p>The license agreement is next. Be sure to read this before selecting "I accept the agreement", which is required in order to proceed.</p>
-<p><img alt="License Agreement" src="../images/installing_keepass/KP4_License_Agreement.png" title="License Agreement"></p>
-<p>I generally don't mess with the install path, but if you have a desire, the next dialogue allows for definition of where KeePass will be installed on the system.</p>
-<p><img alt="Install Path" src="../images/installing_keepass/KP5_Choose_Install_Location.png" title="Install Path"></p>
-<p>Another area that I typically don't mess with, the component selection dialogue lets users take more control over what components of KeePass are installed.</p>
-<p><img alt="Component Selection" src="../images/installing_keepass/KP6_Component_Selection.png" title="Component Selection"></p>
-<p>Yet another menu that requires no changes, the options pictured below ensure that KeePass recognizes the .kdbx file extension, as well as letting the user decide if a desktop and/or Quick Launch shortcut should be created.</p>
-<p><img alt="Additional Tasks" src="../images/installing_keepass/KP7_Additional_Tasks.png" title="Additional Tasks"></p>
-<p>With all the options configured, take a moment to look over the install configuration before proceeding.</p>
-<p><img alt="Review Install" src="../images/installing_keepass/KP8_Review_Install.png" title="Review Install"></p>
-<p>And we're off to the races! In a few moments KeePass will be installed on the local system.</p>
-<p><img alt="Installing" src="../images/installing_keepass/KP9_Installing.png" title="Installing"></p>
-<p>Once installation completes, launching KeePass will take us into the next steps to configure a password database.</p>
-<p><img alt="Launch KeePass" src="../images/installing_keepass/KP10_Launch_KeePass.png" title="Launch KeePass"></p>
-<h1>Using KeePass</h1>
-<h2>Launch the Program</h2>
-<p>If you accepted the install defaults, there is an icon on the desktop. Otherwise find the launcher in the start menu and KeePass walks users through the basic steps of setting up a database.</p>
-<p><img alt="New Database" src="../images/installing_keepass/KP11_New_Database.png" title="New Database"></p>
-<p>Select the path and file name that will become the password database file.</p>
-<p><img alt="Set Database Location" src="../images/installing_keepass/KP12_Database_Location.png" title="Set Database Location"></p>
-<p>The next step is to define the master password. This is the one password which users need to remember to access all the other passwords. Generally, I encourage users to use a <strong><em><code>passphrase &lt;https://en.wikipedia.org/wiki/Passphrase&gt;</code>__</em></strong> rather than a password, for increased security.</p>
-<p><img alt="Set Master Password" src="../images/installing_keepass/KP13_Configure_Master_Password.png" title="Set Master Password"></p>
-<p>Presuming both entries match, selecting "OK" will take us into some additional database settings. Again, since we're just covering the basics of KeePass, I won't be covering these today, but I encourage users to explore these other options.</p>
-<p><img alt="Additional DB Settings" src="../images/installing_keepass/KP14_Additional_Database_Settings.png" title="Additional DB Settings"></p>
-<p>The last step in the setup is to print the KeePass Emergency Sheet. Print this off, fill out the details, and keep it safe as this will contain the details to gain access, should someone need it.</p>
-<p><img alt="Emergency Sheet" src="../images/installing_keepass/KP15_Emergency_Sheet.png" title="Emergency Sheet"></p>
-<p>And finally, we're presented with the KeePass interface. In a later post, we'll work with creating, editing, and using various entries, and how to put KeePass to work generating, and protecting, your passwords from prying eyes.</p>
-<p><img alt="KeePass Interface" src="../images/installing_keepass/KP16_KeePass_Interface.png" title="KeePass Interface"></p>
-<p>There are several default entries and categories within a default KeePass database. I highly recommend exploring the entries that are available, learning the options, and making some mistakes with passwords that don't matter before you start entering passwords on which you depend into KeePass.</p>
-<h1>Conclusion</h1>
-<p>If you've followed along at home, we've successfully installed, configured, and started using the KeePass password manager. While this post was written to demonstrate the process on a Windows 10 machine, KeePass also runs on Linux and Mac. In the next post, I'll cover some notes on general usage of KeePass and the use of online alternatives. The goal here is to get readers to understand the benefits of using a password manager, and to illustrate the ease with which they can be implemented. I hope you've found this post to be informative and I appreciate the time you've taken to read it. Remember that we live in a hostile world and it is important to take measures to protect yourself!</p>                </article>
-            </aside><!-- /#featured -->
-                <section id="content" class="body">
-                    <h1>Other articles</h1>
-                    <hr />
-                    <ol id="posts-list" class="hfeed">
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="/self-doxing-loose-lips-sink-ships.html" rel="bookmark"
-                           title="Permalink to Self Doxing: Loose Lips Sink Ships">Self Doxing: Loose Lips Sink Ships</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2018-07-04T14:22:00-05:00">
-                Published: Wed 04 July 2018
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="/author/phillipgrimes.html">phillipGrimes</a>
-        </address>
-<p>In <a href="/category/blog.html">Blog</a>.</p>
-<p>tags: <a href="/tag/security.html">Security</a> </p>
-</footer><!-- /.post-info -->                <p>For anyone who spends any time reading my content, you may remember a recent post that outlines my thoughts on the general basics of Operational Security. A well timed <code>tweet &lt;https://twitter.com/cokebottle/status/1012345863371395072&gt;</code><strong>\ last week, sparked by this <code>article &lt;https://medium.com/@cosmin.ciobanu/my-top-5-opsec-rules-for-airport-lounges-7c0a48d4c09b&gt;</code></strong>, kicked off …</p>
-                <a class="readmore" href="/self-doxing-loose-lips-sink-ships.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="/real-world-opsec.html" rel="bookmark"
-                           title="Permalink to OpSec in the Real World">OpSec in the Real World</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2018-04-28T18:45:00-05:00">
-                Published: Sat 28 April 2018
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="/author/phil-grimes.html">Phil Grimes</a>
-        </address>
-<p>In <a href="/category/blog.html">Blog</a>.</p>
-<p>tags: <a href="/tag/security.html">Security</a> </p>
-</footer><!-- /.post-info -->                <h1>Operations Security</h1>
+<ol id="post-list">
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="/installing-the-keepass-password-manager.html" rel="bookmark" title="Permalink to Installing the KeePass Password Manager">Installing the KeePass Password Manager</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2018-07-23T15:02:00-05:00"> Mon 23 July 2018 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="/author/phil-grimes.html">Phil Grimes</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p>Today I want to walk through installing the KeePass password manager on Windows 10. This post will explore downloading, installing, and first steps to using a local password manager. The end result, for those who follow these steps, will be an encrypted password generation and storage mechanism.</p>
+<h1>Setting Up KeePass …</h1> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="/self-doxing-loose-lips-sink-ships.html" rel="bookmark" title="Permalink to Self Doxing: Loose Lips Sink Ships">Self Doxing: Loose Lips Sink Ships</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2018-07-04T14:22:00-05:00"> Wed 04 July 2018 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="/author/phillipgrimes.html">phillipGrimes</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p>For anyone who spends any time reading my content, you may remember a recent post that outlines my thoughts on the general basics of Operational Security. A well timed <code>tweet &lt;https://twitter.com/cokebottle/status/1012345863371395072&gt;</code><strong>\ last week, sparked by this <code>article &lt;https://medium.com/@cosmin.ciobanu/my-top-5-opsec-rules-for-airport-lounges-7c0a48d4c09b&gt;</code></strong>, kicked off …</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="/real-world-opsec.html" rel="bookmark" title="Permalink to OpSec in the Real World">OpSec in the Real World</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2018-04-28T18:45:00-05:00"> Sat 28 April 2018 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="/author/phil-grimes.html">Phil Grimes</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <h1>Operations Security</h1>
 <h2>What is OpSec?</h2>
-<p>Operations Security (OpSec) is the action of protecting information which might be used against one in a hostile encounter. OpSec forces a person, or organization, to perform threat modeling to determine potential vulnerabilities which might be exposed to adversaries and establish controls aimed at anticipating …</p>
-                <a class="readmore" href="/real-world-opsec.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="/new-year-new-vulnerabilities.html" rel="bookmark"
-                           title="Permalink to New Year, New Vulnerabilities">New Year, New Vulnerabilities</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2018-01-05T12:19:00-06:00">
-                Published: Fri 05 January 2018
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="/author/phil-grimes.html">Phil Grimes</a>
-        </address>
-<p>In <a href="/category/blog.html">Blog</a>.</p>
-<p>tags: <a href="/tag/security.html">Security</a> </p>
-</footer><!-- /.post-info -->                <p>Well, we got to ring in the new year with some major excitement, haven't we? 2018 has met us with a nasty 1-2 punch combination, no doubt! First, the exposure of a vulnerability that effects <code>millions of GPS tracking devices &lt;https://www.csoonline.com/article/3245312/security/gps-tracking-vulnerabilities-leave-millions-of-products-at-risk.html&gt;</code>__ …</p>
-                <a class="readmore" href="/new-year-new-vulnerabilities.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="/a-christmas-rant.html" rel="bookmark"
-                           title="Permalink to [u'A Christmas Rant', u'A Christmas Rant']">[u'A Christmas Rant', u'A Christmas Rant']</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2017-12-20T11:58:00-06:00">
-                Published: Wed 20 December 2017
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="/author/phil-grimes.html">Phil Grimes</a>
-        </address>
-<p>In <a href="/category/blog.html">Blog</a>.</p>
-<p>tags: <a href="/tag/holidays.html">Holidays</a> <a href="/tag/security.html">Security</a> </p>
-</footer><!-- /.post-info -->                <p>Please allow me to rant for a moment...</p>
+<p>Operations Security (OpSec) is the action of protecting information which might be used against one in a hostile encounter. OpSec forces a person, or organization, to perform threat modeling to determine potential vulnerabilities which might be exposed to adversaries and establish controls aimed at anticipating …</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="/new-year-new-vulnerabilities.html" rel="bookmark" title="Permalink to New Year, New Vulnerabilities">New Year, New Vulnerabilities</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2018-01-05T12:19:00-06:00"> Fri 05 January 2018 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="/author/phil-grimes.html">Phil Grimes</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p>Well, we got to ring in the new year with some major excitement, haven't we? 2018 has met us with a nasty 1-2 punch combination, no doubt! First, the exposure of a vulnerability that effects <code>millions of GPS tracking devices &lt;https://www.csoonline.com/article/3245312/security/gps-tracking-vulnerabilities-leave-millions-of-products-at-risk.html&gt;</code>__ …</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="/a-christmas-rant.html" rel="bookmark" title="Permalink to [u'A Christmas Rant', u'A Christmas Rant']">[u'A Christmas Rant', u'A Christmas Rant']</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2017-12-20T11:58:00-06:00"> Wed 20 December 2017 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="/author/phil-grimes.html">Phil Grimes</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p>Please allow me to rant for a moment...</p>
 <p>I was engaged in a conversation recently when I was met with a statement that someone "had to buy me a gift, so it might as well be $thing."</p>
 <p>O____________________O</p>
 <p>Let me get one thing absolutely straight, for anyone listening.</p>
-<p>You are …</p>
-                <a class="readmore" href="/a-christmas-rant.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-                </ol><!-- /#posts-list -->
-                </section><!-- /#content -->
-        <section id="extras" class="body">
-                <div class="blogroll">
-                        <h2>links</h2>
-                        <ul>
-                            <li><a href="http://getpelican.com/">Pelican</a></li>
-                            <li><a href="http://python.org/">Python.org</a></li>
-                            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
-                            <li><a href="#">You can modify those links in your config file</a></li>
-                        </ul>
-                </div><!-- /.blogroll -->
-                <div class="social">
-                        <h2>social</h2>
-                        <ul>
-                            <li><a href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
-
-                            <li><a href="#">You can add links in your config file</a></li>
-                            <li><a href="#">Another social link</a></li>
-                        </ul>
-                </div><!-- /.social -->
-        </section><!-- /#extras -->
-
+<p>You are …</p> </div><!-- /.entry-content -->
+        </article></li>
+</ol><!-- /#posts-list -->
+</section><!-- /#content -->
         <footer id="contentinfo" class="body">
                 <address id="about" class="vcard body">
-                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
+                which takes great advantage of <a href="http://python.org">Python</a>.
                 </address><!-- /#about -->
-
-                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
         </footer><!-- /#contentinfo -->
-
 </body>
 </html>

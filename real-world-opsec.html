@@ -1,42 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+          <title>Chaos Monkey - OpSec in the Real World</title>
         <meta charset="utf-8" />
-        <title>OpSec in the Real World</title>
-        <link rel="stylesheet" href="/theme/css/main.css" />
-        <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Chaos Monkey Atom Feed" />
+        <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Chaos Monkey Full Atom Feed" />
+        <link href="/feeds/blog.atom.xml" type="application/atom+xml" rel="alternate" title="Chaos Monkey Categories Atom Feed" />
+
+
+
+
+    <meta name="tags" content="Security" />
+
 </head>
 
 <body id="index" class="home">
         <header id="banner" class="body">
-                <h1><a href="/">Chaos Monkey </a></h1>
-                <nav><ul>
-                    <li><a href="/pages/about.html">About Me</a></li>
-                    <li><a href="/pages/my-talks.html">My Talks</a></li>
-                    <li><a href="/pages/wiki-2.html">Wiki</a></li>
-                    <li class="active"><a href="/category/blog.html">Blog</a></li>
-                </ul></nav>
+                <h1><a href="/">Chaos Monkey <strong></strong></a></h1>
         </header><!-- /#banner -->
+        <nav id="menu"><ul>
+            <li><a href="/pages/about.html">About Me</a></li>
+            <li><a href="/pages/my-talks.html">My Talks</a></li>
+            <li><a href="/pages/wiki-2.html">Wiki</a></li>
+            <li class="active"><a href="/category/blog.html">Blog</a></li>
+        </ul></nav><!-- /#menu -->
 <section id="content" class="body">
-  <article>
-    <header>
-      <h1 class="entry-title">
-        <a href="/real-world-opsec.html" rel="bookmark"
-           title="Permalink to OpSec in the Real World">OpSec in the Real World</a></h1>
-    </header>
-
-    <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2018-04-28T18:45:00-05:00">
-                Published: Sat 28 April 2018
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="/author/phil-grimes.html">Phil Grimes</a>
-        </address>
-<p>In <a href="/category/blog.html">Blog</a>.</p>
-<p>tags: <a href="/tag/security.html">Security</a> </p>
-</footer><!-- /.post-info -->      <h1>Operations Security</h1>
+  <header>
+    <h2 class="entry-title">
+      <a href="/real-world-opsec.html" rel="bookmark"
+         title="Permalink to OpSec in the Real World">OpSec in the Real World</a></h2>
+ 
+  </header>
+  <footer class="post-info">
+    <time class="published" datetime="2018-04-28T18:45:00-05:00">
+      Sat 28 April 2018
+    </time>
+    <address class="vcard author">
+      By           <a class="url fn" href="/author/phil-grimes.html">Phil Grimes</a>
+    </address>
+    <div class="category">
+        Category: <a href="/category/blog.html">Blog</a>
+    </div>
+    <div class="tags">
+        Tags:
+            <a href="/tag/security.html">Security</a>
+    </div>
+  </footer><!-- /.post-info -->
+  <div class="entry-content">
+    <h1>Operations Security</h1>
 <h2>What is OpSec?</h2>
 <p>Operations Security (OpSec) is the action of protecting information which might be used against one in a hostile encounter. OpSec forces a person, or organization, to perform threat modeling to determine potential vulnerabilities which might be exposed to adversaries and establish controls aimed at anticipating and defending possible attacks. Identifying attack surfaces and hardening them reduces risk and increases the difficulty an adversary faces in launching a successful attack.</p>
 <p><strong>“All warfare is based on deception. Hence, when able to attack, we must seem unable; when using our forces, we must seem inactive; when we are near, we must make the enemy believe we are far away; when far away, we must make him believe we are near.”  - Sun Tzu</strong> </p>
@@ -83,38 +93,13 @@
 <p>Each of these present their own unique risks to personal OpSec and should be addressed to reduce the risk of attacks.</p>
 <h2>Conclusion</h2>
 <p>OpSec is a necessity for anyone who has anything sensitive that needs to be kept confidential. Obscuring information, skewing facts, and offering misinformation can all be useful in protecting personal operations. Making sure to be consistent in these practices will eliminate the likelihood that information gets leaked to unauthorized parties, reducing the overall attack surface. Protect yourself out there- no one's going to do it for you!</p>
-    </div><!-- /.entry-content -->
-
-  </article>
+  </div><!-- /.entry-content -->
 </section>
-        <section id="extras" class="body">
-                <div class="blogroll">
-                        <h2>links</h2>
-                        <ul>
-                            <li><a href="http://getpelican.com/">Pelican</a></li>
-                            <li><a href="http://python.org/">Python.org</a></li>
-                            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
-                            <li><a href="#">You can modify those links in your config file</a></li>
-                        </ul>
-                </div><!-- /.blogroll -->
-                <div class="social">
-                        <h2>social</h2>
-                        <ul>
-                            <li><a href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
-
-                            <li><a href="#">You can add links in your config file</a></li>
-                            <li><a href="#">Another social link</a></li>
-                        </ul>
-                </div><!-- /.social -->
-        </section><!-- /#extras -->
-
         <footer id="contentinfo" class="body">
                 <address id="about" class="vcard body">
-                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
+                which takes great advantage of <a href="http://python.org">Python</a>.
                 </address><!-- /#about -->
-
-                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
         </footer><!-- /#contentinfo -->
-
 </body>
 </html>
