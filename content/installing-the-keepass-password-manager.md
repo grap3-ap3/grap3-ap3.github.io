@@ -15,7 +15,7 @@ Today I want to walk through installing the KeePass password manager on Windows 
 
 The first step in the process is downloading the installer. From the KeePass download page `<https://keepass.info/download.html>`_, there are options for both the installer and the portable package. While this post will be focused around installing the software on Windows 10, the portable option provides a good solution for users who need their passwords on multiple machines.
 
-<img src="../images/installing_keepass/KP1_KeePass_Download_Page.png" width="700" height="350" />
+<img src="../images/installing_keepass/KP1_KeePass_Download_Page.png" alt="drawing" style="width=500px; height=350px"/>
 
 Choose the installer and then save the file to disk
 
