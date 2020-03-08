@@ -1,7 +1,6 @@
 Title: A Christmas Rant
 Date: 2017-12-20 11:58
 Author: Phil Grimes
-Title: A Christmas Rant
 Category: Blog
 Tags: Holidays, Security
 Slug: a-christmas-rant
