@@ -19,7 +19,7 @@ The first step in the process is downloading the installer. From the KeePass dow
 
 Choose the installer and then save the file to disk
 
-![Save Installer](../images/installing_keepass/KP2_Save_File.png "Save Installer")
+<img src="../images/installing_keepass/KP2_Save_File.pn" alt="Save Installer" style="width=433px; height=200px"/>
 
 Once downloaded, navigate in Explorer to wherever the file was saved. Usually, this is in C:\\Users\\$USER\\Downloads. Double clicking the installer will launch the process. After Windows User Access Control confirms permission to proceed, the KeePass installer will launch. The following series of images illustrates the install process.
 
@@ -27,35 +27,35 @@ Once downloaded, navigate in Explorer to wherever the file was saved. Usually, t
 
 First, select the install language.
 
-![Select Language](../images/installing_keepass/KP3_Choose_Language.png "Select Language")
+<img src="../images/installing_keepass/KP3_Choose_Language.png alt="Select Language" style="width=300px; height=153px"/>
 
 The license agreement is next. Be sure to read this before selecting "I accept the agreement", which is required in order to proceed.
 
-![License Agreement](../images/installing_keepass/KP4_License_Agreement.png "License Agreement")
+<img src="../images/installing_keepass/KP4_License_Agreement.png alt="License Agreement" style="width=498px; height=386px"/>
 
 I generally don't mess with the install path, but if you have a desire, the next dialogue allows for definition of where KeePass will be installed on the system.
 
-![Install Path](../images/installing_keepass/KP5_Choose_Install_Location.png "Install Path")
+<img src="../images/installing_keepass/KP5_Choose_Install_Location.png alt="Install Path" style="width=501px; height=386px"/>
 
 Another area that I typically don't mess with, the component selection dialogue lets users take more control over what components of KeePass are installed.
 
-![Component Selection](../images/installing_keepass/KP6_Component_Selection.png "Component Selection")
+<img src="../images/installing_keepass/KP6_Component_Selection.png alt="Component Selection" style="width=498px; height=386px"/>
 
 Yet another menu that requires no changes, the options pictured below ensure that KeePass recognizes the .kdbx file extension, as well as letting the user decide if a desktop and/or Quick Launch shortcut should be created.
 
-![Additional Tasks](../images/installing_keepass/KP7_Additional_Tasks.png "Additional Tasks")
+<img src="../images/installing_keepass/KP7_Additional_Tasks.png alt="Additional Tasks" style="width=500px; height=387px"/>
 
 With all the options configured, take a moment to look over the install configuration before proceeding.
 
-![Review Install](../images/installing_keepass/KP8_Review_Install.png "Review Install")
+<img src="../images/installing_keepass/KP8_Review_Install.png alt="Review Install" style="width=499px; height=388px"/>
 
 And we're off to the races! In a few moments KeePass will be installed on the local system.
 
-![Installing](../images/installing_keepass/KP9_Installing.png "Installing")
+<img src="../images/installing_keepass/KP9_Installing.png alt="Installing" style="width=500px; height=400px"/>
 
 Once installation completes, launching KeePass will take us into the next steps to configure a password database.
 
-![Launch KeePass](../images/installing_keepass/KP10_Launch_KeePass.png "Launch KeePass")
+<img src="../images/installing_keepass/KP10_Launch_KeePass.png alt="Launch KeePass" style="width=498px; height=386px"/>
 
 #Using KeePass
 
@@ -63,27 +63,27 @@ Once installation completes, launching KeePass will take us into the next steps 
 
 If you accepted the install defaults, there is an icon on the desktop. Otherwise find the launcher in the start menu and KeePass walks users through the basic steps of setting up a database.
 
-![New Database](../images/installing_keepass/KP11_New_Database.png "New Database")
+<img src="../images/installing_keepass/KP11_New_Database.png alt="New Database" style="width=364px; height=293px"/>
 
 Select the path and file name that will become the password database file.
 
-![Set Database Location](../images/installing_keepass/KP12_Database_Location.png "Set Database Location")
+<img src="../images/installing_keepass/KP12_Database_Location.png alt="Set Database Location" style="width=621px; height=471px"/>
 
 The next step is to define the master password. This is the one password which users need to remember to access all the other passwords. Generally, I encourage users to use a ***`passphrase <https://en.wikipedia.org/wiki/Passphrase>`__*** rather than a password, for increased security.
 
-![Set Master Password](../images/installing_keepass/KP13_Configure_Master_Password.png "Set Master Password")
+<img src="../images/installing_keepass/KP13_Configure_Master_Password.png alt="Set Master Password" style="width=527px; height=605px"/>
 
 Presuming both entries match, selecting "OK" will take us into some additional database settings. Again, since we're just covering the basics of KeePass, I won't be covering these today, but I encourage users to explore these other options.
 
-![Additional DB Settings](../images/installing_keepass/KP14_Additional_Database_Settings.png "Additional DB Settings")
+<img src="../images/installing_keepass/KP14_Additional_Database_Settings.png alt="Additional DB Settings" style="width=485px; height=487px"/>
 
 The last step in the setup is to print the KeePass Emergency Sheet. Print this off, fill out the details, and keep it safe as this will contain the details to gain access, should someone need it.
 
-![Emergency Sheet](../images/installing_keepass/KP15_Emergency_Sheet.png "Emergency Sheet")
+<img src="../images/installing_keepass/KP15_Emergency_Sheet.png alt="Emergency Sheet" style="width=425px; height=345px"/>
 
 And finally, we're presented with the KeePass interface. In a later post, we'll work with creating, editing, and using various entries, and how to put KeePass to work generating, and protecting, your passwords from prying eyes.
 
-![KeePass Interface](../images/installing_keepass/KP16_KeePass_Interface.png "KeePass Interface")
+<img src="../images/installing_keepass/KP16_KeePass_Interface.png alt="KeePass Interface" style="width=661px; height=521px"/>
 
 There are several default entries and categories within a default KeePass database. I highly recommend exploring the entries that are available, learning the options, and making some mistakes with passwords that don't matter before you start entering passwords on which you depend into KeePass.
 
