@@ -1,0 +1,36 @@
+Notes. 
+
+Updated 3/8/2020
+
+The hope here is to save from having to re-re-relearn pelican. 
+
+When you cd into E:\Dropbox\phillipGrimes\pelican\grap3-ap3.github.io, this is the master branch. 
+
+Need to checkout the content branch to modify the site. 
+
+Once in content branch, make changes in E:\Dropbox\phillipGrimes\pelican\grap3-ap3.github.io\content
+
+When you're happy with changes: 
+	* pelican content -o output -s publishconf.py
+		This makes the site and pushes data to E:\Dropbox\phillipGrimes\pelican\grap3-ap3.github.io\output
+		
+	Then push to the content repo:
+	
+	* git add .
+	* git commit -m "What did you change?"
+	* git push origin content
+	
+The last step is awkward, but it works. 
+	* copy E:\Dropbox\phillipGrimes\pelican\grap3-ap3.github.io\output
+		paste to E:\Dropbox\phillipGrimes\pelican
+	* Change into master branch 
+	* git pull to ensure you have all the proper data
+	* delete all files EXCEPT "CNAME" and the .git directory
+	* copy all content from E:\Dropbox\phillipGrimes\pelican\output to E:\Dropbox\phillipGrimes\pelican\grap3-ap3.github.io\
+	* delete E:\Dropbox\phillipGrimes\pelican\output
+	
+	then: 
+	
+	* git add .
+	* git commit -m "what are you pushing to master?"
+	* git push origin master
