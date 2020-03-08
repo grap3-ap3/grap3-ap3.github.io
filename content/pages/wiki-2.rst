@@ -5,4 +5,6 @@ Wiki
 :slug: wiki-2
 :status: published
 
+I'm still gathering the resources for this page.
 
+Please check back soon!
