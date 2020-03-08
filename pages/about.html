@@ -1,56 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <meta charset="utf-8" />
+
         <title>About Me</title>
-        <link rel="stylesheet" href="/theme/css/main.css" />
-        <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Chaos Monkey Atom Feed" />
+        <meta charset="utf-8" />
+        <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Chaos Monkey Full Atom Feed" />
+
+
+        <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+        <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1">
+
+        <link rel="stylesheet" type="text/css" href="/theme/gumby.css" />
+        <link rel="stylesheet" type="text/css" href="/theme/style.css" />
+        <link rel="stylesheet" type="text/css" href="/theme/pygment.css" />
+
+        <script src="/theme/js/libs/modernizr-2.6.2.min.js"></script>
+
+
+
+
 </head>
 
 <body id="index" class="home">
-        <header id="banner" class="body">
-                <h1><a href="/">Chaos Monkey </a></h1>
-                <nav><ul>
-                    <li class="active"><a href="/pages/about.html">About Me</a></li>
-                    <li><a href="/pages/my-talks.html">My Talks</a></li>
-                    <li><a href="/pages/wiki-2.html">Wiki</a></li>
-                    <li><a href="/category/blog.html">Blog</a></li>
-                </ul></nav>
-        </header><!-- /#banner -->
-<section id="content" class="body">
-    <h1 class="entry-title">About Me</h1>
+
+
+    <div class="container">
+
+        <div class="row">
+
+          <header id="banner" class="body">
+                  <h1><a href="/">Chaos Monkey <strong></strong></a></h1>
+          </header><!-- /#banner -->
+
+            <div id="navigation" class="navbar row">
+              <a href="#" gumby-trigger="#navigation &gt; ul" class="toggle"><i class="icon-menu"></i></a>
+             
+              <ul class="columns">
+                <li><a href="/">Home</a></li>
+
+                <li class="active"><a href="/pages/about.html">About Me</a></li>
+                <li><a href="/pages/my-talks.html">My Talks</a></li>
+                <li><a href="/pages/wiki-2.html">Wiki</a></li>
+
+              </ul>
+            </div>
+
+    <h1>About Me</h1>
     
+
     <p><img alt="image1" class="alignleft wp-image-13 size-medium" src="../images/headshot_2019.jpeg" style="width: 300px; height: 300px;" />Phil Grimes is a Security Consultant who has provided logistics, security assessments, &amp; penetration testing services for more than a decade. Small businesses, financial institutions &amp; e-commerce providers, telecommunications, manufacturing, education &amp; government agencies, as well as international corporations have engaged Phil to improve organizational security. A passion for the digital world led Phil to pursue a career in the professional security industry developing skills as a vulnerability researcher; eventually becoming a proficient penetration tester &amp; accomplished exploit developer. Phil’s experience in application security, physical &amp; digital penetration testing, mobile security, &amp; social engineering have proven valuable in assessments for high profile customers both domestically &amp; around the globe. A regular speaker &amp; presenter, Phil has brought many topics to life for OWASP &amp; ISSA, several security industry related conferences, &amp; various other speaking appearances to a wide range of audiences.</p>
 
-</section>
-        <section id="extras" class="body">
-                <div class="blogroll">
-                        <h2>links</h2>
-                        <ul>
-                            <li><a href="http://getpelican.com/">Pelican</a></li>
-                            <li><a href="http://python.org/">Python.org</a></li>
-                            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
-                            <li><a href="#">You can modify those links in your config file</a></li>
-                        </ul>
-                </div><!-- /.blogroll -->
-                <div class="social">
-                        <h2>social</h2>
-                        <ul>
-                            <li><a href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
 
-                            <li><a href="#">You can add links in your config file</a></li>
-                            <li><a href="#">Another social link</a></li>
-                        </ul>
-                </div><!-- /.social -->
-        </section><!-- /#extras -->
+       </div><!-- /.row -->
+    </div><!-- /.container -->
 
-        <footer id="contentinfo" class="body">
-                <address id="about" class="vcard body">
-                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
-                </address><!-- /#about -->
 
-                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
-        </footer><!-- /#contentinfo -->
+       <div class="container.nopad bg">
 
+    
+        <footer id="credits" class="row">
+          <div class="seven columns left-center">
+
+                   <address id="about" class="vcard body">
+                    Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
+                    which takes great advantage of <a href="http://python.org">Python</a>.
+                    <br />
+                    Based on the <a target="_blank" href="http://gumbyframework.com">Gumby Framework</a>
+                    </address>
+          </div>
+
+
+          <div class="seven columns">
+            <div class="row">
+              <ul class="socbtns">
+
+
+
+
+
+              </ul>
+            </div>
+          </div>
+        </footer>
+
+    </div>
+
+
+  <script src="/theme/js/libs/jquery-1.9.1.min.js"></script>
+  <script src="/theme/js/libs/gumby.min.js"></script>
+  <script src="/theme/js/plugins.js"></script>
 </body>
 </html>

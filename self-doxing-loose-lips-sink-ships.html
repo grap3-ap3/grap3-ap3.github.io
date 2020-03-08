@@ -1,42 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <meta charset="utf-8" />
+
         <title>Self Doxing: Loose Lips Sink Ships</title>
-        <link rel="stylesheet" href="/theme/css/main.css" />
-        <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Chaos Monkey Atom Feed" />
+        <meta charset="utf-8" />
+        <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Chaos Monkey Full Atom Feed" />
+        <link href="/feeds/blog.atom.xml" type="application/atom+xml" rel="alternate" title="Chaos Monkey Categories Atom Feed" />
+
+
+        <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+        <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1">
+
+        <link rel="stylesheet" type="text/css" href="/theme/gumby.css" />
+        <link rel="stylesheet" type="text/css" href="/theme/style.css" />
+        <link rel="stylesheet" type="text/css" href="/theme/pygment.css" />
+
+        <script src="/theme/js/libs/modernizr-2.6.2.min.js"></script>
+
+
+
+
 </head>
 
 <body id="index" class="home">
-        <header id="banner" class="body">
-                <h1><a href="/">Chaos Monkey </a></h1>
-                <nav><ul>
-                    <li><a href="/pages/about.html">About Me</a></li>
-                    <li><a href="/pages/my-talks.html">My Talks</a></li>
-                    <li><a href="/pages/wiki-2.html">Wiki</a></li>
-                    <li class="active"><a href="/category/blog.html">Blog</a></li>
-                </ul></nav>
-        </header><!-- /#banner -->
+
+
+    <div class="container">
+
+        <div class="row">
+
+          <header id="banner" class="body">
+                  <h1><a href="/">Chaos Monkey <strong></strong></a></h1>
+          </header><!-- /#banner -->
+
+            <div id="navigation" class="navbar row">
+              <a href="#" gumby-trigger="#navigation &gt; ul" class="toggle"><i class="icon-menu"></i></a>
+             
+              <ul class="columns">
+                <li><a href="/">Home</a></li>
+
+                <li><a href="/pages/about.html">About Me</a></li>
+                <li><a href="/pages/my-talks.html">My Talks</a></li>
+                <li><a href="/pages/wiki-2.html">Wiki</a></li>
+
+              </ul>
+            </div>
+
 <section id="content" class="body">
-  <article>
-    <header>
-      <h1 class="entry-title">
-        <a href="/self-doxing-loose-lips-sink-ships.html" rel="bookmark"
-           title="Permalink to Self Doxing: Loose Lips Sink Ships">Self Doxing: Loose Lips Sink Ships</a></h1>
-    </header>
 
-    <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2018-07-04T14:22:00-05:00">
-                Published: Wed 04 July 2018
-        </abbr>
+   <div class="row">
+        <div class="eleven columns">
 
-        <address class="vcard author">
-                By                         <a class="url fn" href="/author/phillipgrimes.html">phillipGrimes</a>
-        </address>
-<p>In <a href="/category/blog.html">Blog</a>.</p>
-<p>tags: <a href="/tag/security.html">Security</a> </p>
-</footer><!-- /.post-info -->      <p>For anyone who spends any time reading my content, you may remember a recent post that outlines my thoughts on the general basics of Operational Security. A well timed <code>tweet &lt;https://twitter.com/cokebottle/status/1012345863371395072&gt;</code><strong>\ last week, sparked by this <code>article &lt;https://medium.com/@cosmin.ciobanu/my-top-5-opsec-rules-for-airport-lounges-7c0a48d4c09b&gt;</code></strong>, kicked off some interesting conversations around the topic which resulted in the series of thoughts that sparked what you're reading now. During the interactions on Twitter, one <code>tweet &lt;https://twitter.com/spyblog/status/1012442709917880320&gt;</code>__ in particular hit on several areas that I observe to be blatantly prevalent as I travel, work in the field, or observe people in general daily life.</p>
+
+            <header>
+              <h2 class="entry-title">
+                <a href="/self-doxing-loose-lips-sink-ships.html" rel="bookmark"
+                   title="Permalink to Self Doxing: Loose Lips Sink Ships">Self Doxing: Loose Lips Sink Ships</a></h2>
+           
+            </header>
+            <footer class="post-info">
+              <abbr class="published" title="2018-07-04T14:22:00-05:00">
+                Wed 04 July 2018
+              </abbr>
+              <address class="vcard author">By 
+                <a class="url fn" href="/author/phillipgrimes.html"> phillipGrimes</a>
+              </address>
+            </footer><!-- /.post-info -->
+            <div class="entry-content">
+              <p>For anyone who spends any time reading my content, you may remember a recent post that outlines my thoughts on the general basics of Operational Security. A well timed <code>tweet &lt;https://twitter.com/cokebottle/status/1012345863371395072&gt;</code><strong>\ last week, sparked by this <code>article &lt;https://medium.com/@cosmin.ciobanu/my-top-5-opsec-rules-for-airport-lounges-7c0a48d4c09b&gt;</code></strong>, kicked off some interesting conversations around the topic which resulted in the series of thoughts that sparked what you're reading now. During the interactions on Twitter, one <code>tweet &lt;https://twitter.com/spyblog/status/1012442709917880320&gt;</code>__ in particular hit on several areas that I observe to be blatantly prevalent as I travel, work in the field, or observe people in general daily life.</p>
 <p>Since these were called out by others during the conversation, and I have had the (mis)fortune of running into some of them recently, I figured I'd expound on the topics. In my normal fashion, I thought some anecdotes could help drive the visibility up a bit and hopefully get some of you thinking a little differently about how you handle yourselves in public.</p>
 <h1>What is "Doxing"?</h1>
 <p>First, a little background. Somewhere along the line "doxing" became a recognized form of internet attack. Basically, this tactic requires the attacker(s) to scour internet resources to gather information on a targeted individual, and then broadcasting personal or private information about that person. While the point of this article is not to go in-depth into the world of doxing, some high profile examples are outlined on the <code>Wikipedia page &lt;https://en.wikipedia.org/wiki/Doxing&gt;</code>__ covering the topic.</p>
@@ -66,38 +97,75 @@
 <h2>Unattended devices</h2>
 <p>Here is another vector that just boggles my mind. Why, in today's hostile world, do people ever find it appropriate to leave their belongings unattended? I can't comprehend this logic. Even the cheapest MP3 player can be left alone and someone will take it simply because they can! People aren't nice. If you have something of any value, they're likely to want it for their own.</p>
 <p>Picture you're in a parking lot, standing between 2 cars among a sea of others. 1/2 mile from anyone else with no surveillance. One car is locked and has a $100 bill sitting on the passenger seat. The other, windows down and unlocked, with a $5 in the cup holder. The chances are great that the $5 gets stolen more often than the $100 simply because of availability and ease of access. Make yourself and easy target and you make yourself a definite target.</p>
-    </div><!-- /.entry-content -->
+            </div><!-- /.entry-content -->
 
-  </article>
+
+        </div><!-- /.eleven.columns -->
+
+<div class="three columns">
+
+  <h4>Pages</h4>
+
+  <ul>
+
+    <li ><a href="/pages/about.html">About Me</a></li>
+    <li ><a href="/pages/my-talks.html">My Talks</a></li>
+    <li ><a href="/pages/wiki-2.html">Wiki</a></li>
+  
+
+
+
+
+<nav class="widget">
+  <h4>Social</h4>
+  <ul class="blank">
+    <li><a href="#">You can add links in your config file</a></li>
+    <li><a href="#">Another social link</a></li>
+  </ul>
+</nav>
+
+</div> </div><!-- /.row -->
+
+
 </section>
-        <section id="extras" class="body">
-                <div class="blogroll">
-                        <h2>links</h2>
-                        <ul>
-                            <li><a href="http://getpelican.com/">Pelican</a></li>
-                            <li><a href="http://python.org/">Python.org</a></li>
-                            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
-                            <li><a href="#">You can modify those links in your config file</a></li>
-                        </ul>
-                </div><!-- /.blogroll -->
-                <div class="social">
-                        <h2>social</h2>
-                        <ul>
-                            <li><a href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
 
-                            <li><a href="#">You can add links in your config file</a></li>
-                            <li><a href="#">Another social link</a></li>
-                        </ul>
-                </div><!-- /.social -->
-        </section><!-- /#extras -->
+       </div><!-- /.row -->
+    </div><!-- /.container -->
 
-        <footer id="contentinfo" class="body">
-                <address id="about" class="vcard body">
-                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
-                </address><!-- /#about -->
 
-                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
-        </footer><!-- /#contentinfo -->
+       <div class="container.nopad bg">
 
+    
+        <footer id="credits" class="row">
+          <div class="seven columns left-center">
+
+                   <address id="about" class="vcard body">
+                    Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
+                    which takes great advantage of <a href="http://python.org">Python</a>.
+                    <br />
+                    Based on the <a target="_blank" href="http://gumbyframework.com">Gumby Framework</a>
+                    </address>
+          </div>
+
+
+          <div class="seven columns">
+            <div class="row">
+              <ul class="socbtns">
+
+
+
+
+
+              </ul>
+            </div>
+          </div>
+        </footer>
+
+    </div>
+
+
+  <script src="/theme/js/libs/jquery-1.9.1.min.js"></script>
+  <script src="/theme/js/libs/gumby.min.js"></script>
+  <script src="/theme/js/plugins.js"></script>
 </body>
 </html>
