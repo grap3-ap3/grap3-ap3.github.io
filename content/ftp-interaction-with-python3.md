@@ -62,4 +62,4 @@ Since this project came to life during a professional engagement, my development
 
 #Conclusion
 
-Just a little post to share my thoughts with you as I built out this code, I'm calling it EffTeePee. I wanted to get this out there to share with you, and I hope you find it useful! Thanks for taking the time to stop by my little corner of the internet, I'll hope to catch your attention again soon. 
+Just a little post to share my thoughts with you as I built out this code, I'm calling it EffTeePee. You can download or review the code on [github](https://github.com/grap3-ap3/EffTeePee "EffTeePee on GitHub"), but I wanted to get this out there to share with you. I hope you find it useful! Thanks for taking the time to stop by my little corner of the internet, I'll hope to catch your attention again soon. 
