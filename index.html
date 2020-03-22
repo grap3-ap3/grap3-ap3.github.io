@@ -53,15 +53,21 @@
 
 
 <p>And then to connect to our targeted server, with FTP running on the default port (21). I couldn't use my real example due to NDA, but we'll look at an open FTP server to share the spirit of the code: </p>
-<p><code>python
-ftp = FTP('ftp.debian.org')</code></p>
+<div class="highlight"><pre><span></span><span class="n">ftp</span> <span class="o">=</span> <span class="n">FTP</span><span class="p">(</span><span class="s1">&#39;ftp.debian.org&#39;</span><span class="p">)</span>
+</pre></div>
+
+
 <p>Once connected, we need to log in. Now remeber that I was writing this on the fly, during an engagement. I didn't have any credentials, but wanted to simply test for anonymous access to this server. Logging in with ftplib is quite simple, especially when there are no credentails to pass: </p>
-<p><code>python
-ftp.login()
-'230 Login successful.'</code></p>
+<div class="highlight"><pre><span></span><span class="n">ftp</span><span class="o">.</span><span class="n">login</span><span class="p">()</span>
+<span class="s1">&#39;230 Login successful.&#39;</span>
+</pre></div>
+
+
 <p>We get acknowledement of our login, and we're off to the races! One of the first things I always try to do is gain an understanding of the environment and my surroundings by listing the contents of the directory I'm in: </p>
-<p><code>python
-ftp.retrlines('LIST')</code></p>
+<div class="highlight"><pre><span></span><span class="n">ftp</span><span class="o">.</span><span class="n">retrlines</span><span class="p">(</span><span class="s1">&#39;LIST&#39;</span><span class="p">)</span>
+</pre></div>
+
+
 <p>In a matter of minutes I was browsing the anonymous FTP server I'd been targeting, and most of that was spent reading the documentation. I was connected and logged in, thanks to the power of python, and able to display the help/welcome message, navigate around the files structure, browse directory contents, download files (upload was restricted), and more. I won't go into the full feature set of the library, because much of the methods/objects weren't of use to me during the testing. This was also because I had some mild interest in the project on Twitter, so I figured it would be fun to release sooner than later. If you find a bug, or have an enhancement or feature request, please speak up! It's always nice getting feedback! </p>
 <h2>Building the program</h2>
 <p>As is my nature, and most of my programming experience, this is starting out as a quick and dirty script. It's not pretty. It's not elegant. It just works. So while I am still evolving as a developer, and am open to any constructive criticism, I am also a hacker and my primary objctive in life will be to accomplis the mission set before me as quickly and efficiently as possible. And that's what I've done here. </p>
