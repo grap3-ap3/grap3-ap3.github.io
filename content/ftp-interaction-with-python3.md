@@ -36,18 +36,21 @@ from ftplib import FTP
 And then to connect to our targeted server, with FTP running on the default port (21). I couldn't use my real example due to NDA, but we'll look at an open FTP server to share the spirit of the code: 
 
 ```python
-ftp = FTP('ftp.debian.org')```
+ftp = FTP('ftp.debian.org')
+```
 
 Once connected, we need to log in. Now remeber that I was writing this on the fly, during an engagement. I didn't have any credentials, but wanted to simply test for anonymous access to this server. Logging in with ftplib is quite simple, especially when there are no credentails to pass: 
 
 ```python
 ftp.login()
-'230 Login successful.'```
+'230 Login successful.'
+```
 
 We get acknowledement of our login, and we're off to the races! One of the first things I always try to do is gain an understanding of the environment and my surroundings by listing the contents of the directory I'm in: 
 
 ```python
-ftp.retrlines('LIST') ```
+ftp.retrlines('LIST')
+```
 
 In a matter of minutes I was browsing the anonymous FTP server I'd been targeting, and most of that was spent reading the documentation. I was connected and logged in, thanks to the power of python, and able to display the help/welcome message, navigate around the files structure, browse directory contents, download files (upload was restricted), and more. I won't go into the full feature set of the library, because much of the methods/objects weren't of use to me during the testing. This was also because I had some mild interest in the project on Twitter, so I figured it would be fun to release sooner than later. If you find a bug, or have an enhancement or feature request, please speak up! It's always nice getting feedback! 
 
