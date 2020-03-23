@@ -7,4 +7,8 @@ Wiki
 
 I'm still gathering the resources for this page.
 
+A
+An example link `AThing
+<http://www.python.org/>`_.
+
 Please check back soon!
