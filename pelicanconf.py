@@ -12,6 +12,10 @@ TIMEZONE = 'America/Chicago'
 
 DEFAULT_LANG = u'en'
 
+# Plugin directives
+PLUGIN_PATHS = [r'E:\Dropbox\phillipGrimes\pelican\pelican-plugins']
+PLUGINS = ['pelican-page-hierarchy']
+
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
